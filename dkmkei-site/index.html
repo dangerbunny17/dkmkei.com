@@ -1,0 +1,69 @@
+---
+layout: default
+nav: home
+title: Home
+description: DKM Consulting Group provides building management system (BMS) design review, controls integration, commissioning support and owner's representation for data centers.
+---
+<section class="hero">
+  {% include circuit.svg %}
+  <div class="scrim"></div>
+  <div class="wrap hero-text">
+    <h1 class="hero-title"><span class="keep-line">{{ site.data.home.hero_line1 }}</span><br class="hero-br"> {{ site.data.home.hero_line2 }}</h1>
+    <p class="hero-lede">{{ site.data.home.hero_text }}</p>
+  </div>
+</section>
+
+<section class="cta-bar">
+  <div class="wrap actions">
+    <a class="btn" href="contact.html">Talk to us</a>
+    <a class="text-link" href="experience.html">See our experience</a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>{{ site.data.home.services_heading }}</h2>
+      {% if site.data.home.services_intro != "" %}<p class="muted">{{ site.data.home.services_intro }}</p>{% endif %}
+    </div>
+    <div class="cards">
+      {% for s in site.data.services %}
+      <article class="card">
+        <img src="{{ s.image }}" alt="" loading="lazy" style="object-position: {{ s.image_position }}">
+        <div class="card-text">
+          <h3>{{ s.title }}</h3>
+          <p>{{ s.text }}</p>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section band">
+  <div class="wrap">
+    <h2>{{ site.data.home.clients_heading }}</h2>
+    <div class="quotes">
+      {% for t in site.data.testimonials %}{% if t.show_on_home %}
+      <figure class="quote">
+        <blockquote>“{{ t.quote }}”</blockquote>
+        <figcaption>{{ t.name }}, {{ t.title }}, {{ t.company }}</figcaption>
+      </figure>
+      {% endif %}{% endfor %}
+    </div>
+    <a class="btn" href="experience.html">See our experience</a>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="rule"></div>
+    <div class="split">
+      <div>
+        <h2>{{ site.data.home.contact_heading }}</h2>
+        <p class="body-text">{{ site.data.home.contact_text }}</p>
+      </div>
+      {% include form-quick.html %}
+    </div>
+  </div>
+</section>

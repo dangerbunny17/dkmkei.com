@@ -1,0 +1,16 @@
+title: "About Us"
+principles:
+  - title: "Knowledge."
+    text: "We know the protocols, the equipment and the codes. We explain them in plain terms to everyone on the project."
+  - title: "Experience."
+    text: "Two decades of field work. We have seen what fails at startup, and we design to prevent it."
+  - title: "Integrity."
+    text: "We report what we find, also when the news is bad. Our advice does not depend on which vendor wins."
+name: "David Main"
+role: "Founder and principal consultant"
+photo: "assets/img/david.jpg"
+bio:
+  - "[Two or three short paragraphs. Where he started in controls, the kinds of buildings he has worked on, and how he came to data center work.]"
+  - "[What he does on a project today, and what clients can expect when they call him.]"
+cta_heading: "Have a project in design or construction?"
+cta_text: "The earlier we see the controls design, the more problems we can prevent."
