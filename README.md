@@ -71,6 +71,12 @@ Each message has a subject like **"[Commissioning support] Website inquiry from 
 
 Each **Save** in Pages CMS commits the change to GitHub. The live site updates in about a minute.
 
+## The holding page ("under construction")
+
+While **Contact details and form > Under construction** is on, every page of dkmkei.com shows only the holding page: the circuit animation, a short message, and the contact email. Search engines are asked not to list the site during this time.
+
+To put the full site live, turn that switch **off** in Pages CMS and click **Save**. The full site is live in about a minute. To go back, turn it on again.
+
 ## Before launch: checklist
 
 - [ ] Replace all text in [square brackets].
@@ -79,3 +85,4 @@ Each **Save** in Pages CMS commits the change to GitHub. The live site updates i
 - [ ] Replace David's placeholder photo (the cowboy hat one), unless he insists on keeping it.
 - [ ] Confirm each item under "Systems we know".
 - [ ] Connect Formspree and send a test message.
+- [ ] Turn off **Under construction** in Pages CMS.

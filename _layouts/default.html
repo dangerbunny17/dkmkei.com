@@ -3,9 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{% if page.nav == "home" %}DKM Consulting Group | BMS consulting for data centers{% else %}{{ page.title }} | DKM Consulting Group{% endif %}</title>
+<title>{% if site.data.site.under_construction %}DKM Consulting Group{% elsif page.nav == "home" %}DKM Consulting Group | BMS consulting for data centers{% else %}{{ page.title }} | DKM Consulting Group{% endif %}</title>
 <meta name="description" content="{{ page.description }}">
 <meta name="color-scheme" content="light dark">
+{% if site.data.site.under_construction %}<meta name="robots" content="noindex">{% endif %}
 <meta property="og:title" content="DKM Consulting Group">
 <meta property="og:description" content="{{ page.description }}">
 <meta property="og:type" content="website">
@@ -17,6 +18,9 @@
 <link rel="stylesheet" href="assets/css/site.css">
 </head>
 <body>
+{% if site.data.site.under_construction %}
+{% include holding.html %}
+{% else %}
 <a class="skip-link" href="#main">Skip to content</a>
 
 <header class="site-header">
@@ -53,5 +57,6 @@
 </footer>
 
 <script src="assets/js/site.js"></script>
+{% endif %}
 </body>
 </html>

@@ -1,0 +1,10 @@
+<main class="holding hero" id="main">
+  {% include circuit.svg %}
+  <div class="scrim"></div>
+  <div class="wrap hero-text holding-inner">
+    <img class="holding-logo" src="assets/img/logo-white.png" alt="DKM Consulting Group" width="185" height="100">
+    <h1 class="hero-title">{{ site.data.site.holding_title }}</h1>
+    <p class="hero-lede">{{ site.data.site.holding_text }}</p>
+    {% if site.data.site.email != "" %}<p class="holding-contact"><a href="mailto:{{ site.data.site.email }}">{{ site.data.site.email }}</a></p>{% endif %}
+  </div>
+</main>

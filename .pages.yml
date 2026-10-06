@@ -25,6 +25,15 @@ content:
       - name: formspree_id
         label: Formspree form ID (empty = forms are in preview mode)
         type: string
+      - name: under_construction
+        label: Under construction (on = every page shows the holding page; off = full site is live)
+        type: boolean
+      - name: holding_title
+        label: Holding page headline
+        type: string
+      - name: holding_text
+        label: Holding page text
+        type: text
 
   - name: home
     label: Home page text
