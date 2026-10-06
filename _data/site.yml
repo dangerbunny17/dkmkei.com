@@ -1,12 +1,6 @@
-# Contact details shown on the site and used by the forms.
-email: "contact@dkmkei.com"
-phone: ""
-location: "[City, State]"
-# Formspree form ID, for example "xyzabcde". Leave empty to keep the forms in preview mode (nothing is sent).
-formspree_id: ""
-
-# Holding page. While this is true, every page shows only the holding page.
-# Set it to false to put the full site live.
+email: levi@dkmkei.com
+location: On the banks of the Ohio River
 under_construction: true
-holding_title: "Our new website is on the way."
-holding_text: "DKM Consulting Group provides building management systems consulting for data centers. Until the full site is ready, email us."
+holding_title: Our new website is on the way.
+holding_text: DKM Consulting Group provides building management systems
+  consulting for data centers. Until the full site is ready, email us.
