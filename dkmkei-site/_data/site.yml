@@ -1,6 +1,0 @@
-# Contact details shown on the site and used by the forms.
-email: "contact@dkmkei.com"
-phone: ""
-location: "[City, State]"
-# Formspree form ID, for example "xyzabcde". Leave empty to keep the forms in preview mode (nothing is sent).
-formspree_id: ""
