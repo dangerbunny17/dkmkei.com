@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.nav == "home" %}DKM Consulting Group | BMS consulting for data centers{% else %}{{ page.title }} | DKM Consulting Group{% endif %}</title>
+<meta name="description" content="{{ page.description }}">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="DKM Consulting Group">
+<meta property="og:description" content="{{ page.description }}">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Public+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="index.html" aria-label="DKM Consulting Group home">
+      <img class="logo-light" src="assets/img/logo-black.png" alt="DKM Consulting Group" width="148" height="80">
+      <img class="logo-dark" src="assets/img/logo-white.png" alt="DKM Consulting Group" width="148" height="80">
+    </a>
+    <nav class="main-nav" aria-label="Main">
+      <a href="about.html"{% if page.nav == "about" %} aria-current="page"{% endif %}>About</a>
+      <a href="experience.html"{% if page.nav == "experience" %} aria-current="page"{% endif %}>Our Experience</a>
+      <a class="btn btn-small" href="contact.html"{% if page.nav == "contact" %} aria-current="page"{% endif %}>Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+{{ content }}
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <img src="assets/img/logo-white.png" alt="DKM Consulting Group" width="133" height="72">
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="about.html">About</a>
+      <a href="experience.html">Our Experience</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+  <div class="wrap footer-base">
+    <span>© 2026 DKM Consulting Group</span>
+    <span>{{ site.data.site.location }}</span>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>

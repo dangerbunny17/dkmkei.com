@@ -1,0 +1,20 @@
+---
+layout: default
+nav: contact
+title: Contact
+description: Contact DKM Consulting Group about BMS design review, controls integration, commissioning support or owner's representation for your data center project.
+---
+<section class="section section-top">
+  <div class="wrap split">
+    <div>
+      <h1 class="page-title">{{ site.data.contact.title }}</h1>
+      <p class="lede">{{ site.data.contact.intro }}</p>
+      <dl class="contact-list">
+        {% if site.data.site.email != "" %}<div><dt>Email</dt><dd><a href="mailto:{{ site.data.site.email }}">{{ site.data.site.email }}</a></dd></div>{% endif %}
+        {% if site.data.site.phone != "" %}<div><dt>Phone</dt><dd><a href="tel:{{ site.data.site.phone }}">{{ site.data.site.phone }}</a></dd></div>{% endif %}
+        {% if site.data.site.location != "" %}<div><dt>Based in</dt><dd>{{ site.data.site.location }}</dd></div>{% endif %}
+      </dl>
+    </div>
+    {% include form-full.html %}
+  </div>
+</section>

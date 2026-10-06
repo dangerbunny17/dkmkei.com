@@ -1,0 +1,12 @@
+title: "Contact"
+intro: "Tell us about your project. If you prefer email, write to us directly."
+# These appear in the "Project type" menu on both forms.
+# The choice is added to the email subject, for example "[Commissioning support] Website inquiry from Jane Doe".
+project_types:
+  - "Design and specification review"
+  - "Controls integration"
+  - "Owner's representation"
+  - "Sequences of operation"
+  - "Commissioning support"
+  - "Alarms and graphics"
+  - "Other"

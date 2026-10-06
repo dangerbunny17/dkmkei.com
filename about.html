@@ -1,0 +1,41 @@
+---
+layout: default
+nav: about
+title: About
+description: DKM Consulting Group was founded by David Main after more than 20 years in building management systems.
+---
+<section class="section band">
+  <div class="wrap">
+    <h1 class="page-title">{{ site.data.about.title }}</h1>
+    <div class="values">
+      {% for v in site.data.about.principles %}
+      <div>
+        <h2 class="value-title">{{ v.title }}</h2>
+        <p class="body-text">{{ v.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap bio">
+    <img class="bio-photo" src="{{ site.data.about.photo }}" alt="{{ site.data.about.name }}" width="800" height="1000">
+    <div>
+      <h2>{{ site.data.about.name }}</h2>
+      <p class="muted bio-role">{{ site.data.about.role }}</p>
+      {% for p in site.data.about.bio %}<p class="body-text measure">{{ p }}</p>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap closing">
+    <div>
+      <h2>{{ site.data.about.cta_heading }}</h2>
+      <p class="body-text">{{ site.data.about.cta_text }}</p>
+    </div>
+    <div><a class="btn" href="contact.html">Talk to us</a></div>
+  </div>
+</section>
