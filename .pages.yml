@@ -1,0 +1,233 @@
+# Pages CMS settings: https://pagescms.org/docs
+# Each entry below becomes an editable form in Pages CMS.
+
+media:
+  input: assets/img
+  output: assets/img
+  categories: [image]
+
+content:
+  - name: site
+    label: Contact details and form
+    type: file
+    path: _data/site.yml
+    format: yaml
+    fields:
+      - name: email
+        label: Contact email
+        type: string
+      - name: phone
+        label: Phone (leave empty to hide)
+        type: string
+      - name: location
+        label: Location (shown in footer and on Contact page)
+        type: string
+      - name: formspree_id
+        label: Formspree form ID (empty = forms are in preview mode)
+        type: string
+
+  - name: home
+    label: Home page text
+    type: file
+    path: _data/home.yml
+    format: yaml
+    fields:
+      - name: hero_line1
+        label: Headline, line 1
+        type: string
+      - name: hero_line2
+        label: Headline, line 2
+        type: string
+      - name: hero_text
+        label: Text under the headline
+        type: text
+      - name: services_heading
+        label: Services heading
+        type: string
+      - name: services_intro
+        label: Services intro (optional)
+        type: text
+      - name: clients_heading
+        label: Client quotes heading
+        type: string
+      - name: contact_heading
+        label: Contact section heading
+        type: string
+      - name: contact_text
+        label: Contact section text
+        type: text
+
+  - name: services
+    label: Services (home page cards)
+    type: file
+    path: _data/services.yml
+    format: yaml
+    list: true
+    fields:
+      - name: title
+        label: Title
+        type: string
+      - name: text
+        label: Description
+        type: text
+      - name: image
+        label: Photo
+        type: image
+      - name: image_position
+        label: Photo focus (for example "50% 50%" = center, "70% 30%" = right and up)
+        type: string
+
+  - name: testimonials
+    label: Client quotes
+    type: file
+    path: _data/testimonials.yml
+    format: yaml
+    list: true
+    fields:
+      - name: quote
+        label: Quote (get written permission first)
+        type: text
+      - name: name
+        label: Name
+        type: string
+      - name: title
+        label: Job title
+        type: string
+      - name: company
+        label: Company
+        type: string
+      - name: show_on_home
+        label: Show on home page (mark 3)
+        type: boolean
+
+  - name: projects
+    label: Projects (Our Experience page)
+    type: file
+    path: _data/projects.yml
+    format: yaml
+    list: true
+    fields:
+      - name: project
+        label: Project and location
+        type: string
+      - name: scope
+        label: Scope
+        type: text
+      - name: role
+        label: Our role
+        type: string
+      - name: year
+        label: Year
+        type: string
+      - name: era
+        label: When
+        type: select
+        options:
+          values: [DKMCG, Before DKMCG]
+
+  - name: about
+    label: About page
+    type: file
+    path: _data/about.yml
+    format: yaml
+    fields:
+      - name: title
+        label: Page title
+        type: string
+      - name: principles
+        label: Knowledge, Experience, Integrity
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Word
+            type: string
+          - name: text
+            label: Text
+            type: text
+      - name: name
+        label: Name
+        type: string
+      - name: role
+        label: Role
+        type: string
+      - name: photo
+        label: Photo
+        type: image
+      - name: bio
+        label: Bio paragraphs
+        type: text
+        list: true
+      - name: cta_heading
+        label: Closing heading
+        type: string
+      - name: cta_text
+        label: Closing text
+        type: text
+
+  - name: experience
+    label: Our Experience page
+    type: file
+    path: _data/experience.yml
+    format: yaml
+    fields:
+      - name: title
+        label: Page title
+        type: string
+      - name: intro
+        label: Intro text
+        type: text
+      - name: facts
+        label: Facts beside the title
+        type: object
+        list: true
+        fields:
+          - name: label
+            label: Label
+            type: string
+          - name: value
+            label: Value
+            type: string
+      - name: projects_heading
+        label: Projects heading
+        type: string
+      - name: projects_note
+        label: Note under projects heading
+        type: string
+      - name: clients_heading
+        label: Client quotes heading
+        type: string
+      - name: systems_heading
+        label: Systems heading
+        type: string
+      - name: systems
+        label: Systems
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: text
+            label: Text
+            type: text
+      - name: references_text
+        label: References box text
+        type: string
+
+  - name: contact
+    label: Contact page
+    type: file
+    path: _data/contact.yml
+    format: yaml
+    fields:
+      - name: title
+        label: Page title
+        type: string
+      - name: intro
+        label: Intro text
+        type: text
+      - name: project_types
+        label: Project types in the form menu (added to the email subject)
+        type: string
+        list: true
