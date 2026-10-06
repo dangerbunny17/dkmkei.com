@@ -7,6 +7,6 @@ formspree_id: ""
 
 # Holding page. While this is true, every page shows only the holding page.
 # Set it to false to put the full site live.
-under_construction: false
+under_construction: true
 holding_title: "Our new website is on the way."
 holding_text: "DKM Consulting Group provides building management systems consulting for data centers. Until the full site is ready, email us."

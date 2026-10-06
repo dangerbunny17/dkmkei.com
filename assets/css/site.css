@@ -2,6 +2,7 @@
    Colors are tokens. Dark mode changes the tokens only. */
 
 :root {
+  color-scheme: light;
   --bg: #FFFFFF;
   --band: #EDF2F7;
   --ink: #1C2B3A;
@@ -19,40 +20,6 @@
   --serif: 'Libre Caslon Text', Georgia, 'Times New Roman', serif;
   --sans: 'Public Sans', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif;
   --gutter: 48px;
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #141E28;
-    --band: #1B2835;
-    --ink: #E7EDF3;
-    --body: #B8C5D1;
-    --muted: #93A4B4;
-    --rule: #2B3B4C;
-    --accent: #6FA3CF;
-    --btn: #3A73A3;
-    --btn-hover: #4A84B4;
-    --link: #8DBBE3;
-    --field: #3A4D60;
-    --fieldbg: #1B2835;
-    --error: #F2B8B5;
-    color-scheme: dark;
-  }
-}
-:root[data-theme="dark"] {
-    --bg: #141E28;
-    --band: #1B2835;
-    --ink: #E7EDF3;
-    --body: #B8C5D1;
-    --muted: #93A4B4;
-    --rule: #2B3B4C;
-    --accent: #6FA3CF;
-    --btn: #3A73A3;
-    --btn-hover: #4A84B4;
-    --link: #8DBBE3;
-    --field: #3A4D60;
-    --fieldbg: #1B2835;
-    --error: #F2B8B5;
-  color-scheme: dark;
 }
 
 * { box-sizing: border-box; }
@@ -80,14 +47,6 @@ h3 { font-size: 22px; line-height: 1.25; }
 .skip-link:focus { left: 8px; }
 
 .wrap { max-width: 1200px; margin: 0 auto; }
-.logo-light { display: block; }
-.logo-dark { display: none; }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .logo-light { display: none; }
-  :root:not([data-theme="light"]) .logo-dark { display: block; }
-}
-:root[data-theme="dark"] .logo-light { display: none; }
-:root[data-theme="dark"] .logo-dark { display: block; }
 
 /* Header */
 .site-header { border-bottom: 1px solid var(--rule); padding: 18px var(--gutter); }

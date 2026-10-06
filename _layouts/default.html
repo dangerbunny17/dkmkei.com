@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% if site.data.site.under_construction %}DKM Consulting Group{% elsif page.nav == "home" %}DKM Consulting Group | BMS consulting for data centers{% else %}{{ page.title }} | DKM Consulting Group{% endif %}</title>
 <meta name="description" content="{{ page.description }}">
-<meta name="color-scheme" content="light dark">
+<meta name="color-scheme" content="light">
 {% if site.data.site.under_construction %}<meta name="robots" content="noindex">{% endif %}
 <meta property="og:title" content="DKM Consulting Group">
 <meta property="og:description" content="{{ page.description }}">
@@ -26,8 +26,7 @@
 <header class="site-header">
   <div class="wrap header-row">
     <a class="brand" href="index.html" aria-label="DKM Consulting Group home">
-      <img class="logo-light" src="assets/img/logo-black.png" alt="DKM Consulting Group" width="148" height="80">
-      <img class="logo-dark" src="assets/img/logo-white.png" alt="DKM Consulting Group" width="148" height="80">
+      <img src="assets/img/logo-black.png" alt="DKM Consulting Group" width="148" height="80">
     </a>
     <nav class="main-nav" aria-label="Main">
       <a href="about.html"{% if page.nav == "about" %} aria-current="page"{% endif %}>About</a>
