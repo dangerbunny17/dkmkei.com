@@ -220,9 +220,6 @@ content:
           - name: text
             label: Text
             type: text
-      - name: references_text
-        label: References box text
-        type: string
 
   - name: contact
     label: Contact page
